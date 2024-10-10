@@ -1,0 +1,90 @@
+/* Allmän stil för sidan */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top section */
+#top {
+    display: flex;
+    justify-content: space-between; /* Sprid länkar och rubrik på ett jämnt sätt */
+    align-items: center;
+    width: 80%;
+    margin: 20px 0; /* Utrymme ovanför och nedanför */
+    padding: 10px;
+    background-color: lightgray;
+    border: 2px solid red;
+    box-sizing: border-box; /* Gör så padding inkluderas i bredden */
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1; /* Låter navigeringen ta så mycket plats som möjligt */
+    padding-right: 20px; /* Lägger lite extra utrymme mellan länkar och rubrik */
+}
+
+nav a {
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px 0px;
+}
+
+/* Rubrik styling */
+#rubrik {
+    background-color: cyan;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin-left: px;
+    flex-shrink: 0; /* Förhindrar att rubriken krymper */
+}
+
+/* Content area */
+#content {
+    display: flex;
+    justify-content: space-between; /* Sprid ut innehåll jämt över området */
+    width: 100%;
+    margin-top: 0px; /* Utrymme ovanför innehållet */
+    padding: 40px;
+    border: 2px solid orange;
+}
+
+/* Horisontella och vertikala block */
+.mellan_h, .mellan_v {
+    width: 49%; /* Blocken tar upp 49% av tillgänglig bredd */
+    height: 150px;
+    background-color: lightgray;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 0; /* Lägger till utrymme ovanför och under blocken */
+}
+.mellan_v{
+    background-color: lightcoral;
+}
+.mellan_h{
+    background-color: yellow;
+}
+
+/* Footer content (om du vill ha det) */
+#footer {
+    margin-top: 20px;
+    width: 80%;
+    padding: 15px;
+    background-color: #607d8b;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.Rutan{
+    background-color: lightgrey;
+    border: 2px solid yellow;
+}
